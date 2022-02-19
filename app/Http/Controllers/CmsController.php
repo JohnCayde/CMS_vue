@@ -38,6 +38,7 @@ class CmsController extends Controller
     {
         $pages = $this->GetPage();
         if (count($pages) == 0) {
+            return $pages;
             return view("preview", ["components" => []]);
         }
         $pageCodes = array_column($pages, "code");

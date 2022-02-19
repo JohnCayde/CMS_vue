@@ -31,32 +31,30 @@
     @foreach ($components as $i => $component)
         @switch($component["name"])
             @case('navbar')
-                @if (!$component['props']['Hang'])
-                    @include('project.cms.navbar', ["component"=>$component])
-                @endif
+                @include('navbar', ["component"=>$component])
             @break
             @case('cards')
                 @if ($components[$i - 1]['name'] == 'navbar' && $components[$i - 1]['props']['Hang'])
                     <div class="position-relative">
-                        @include('project.cms.navbar', ["component"=>$components[$i-1]])
-                        @include('project.cms.cards', ["component"=>$component])
+                        @include('navbar', ["component"=>$components[$i-1]])
+                        @include('cards', ["component"=>$component])
                     </div>
                 @else
-                    @include('project.cms.cards', ["component"=>$component])
+                    @include('cards', ["component"=>$component])
                 @endif
             @break
             @case('carousel')
                 @if ($components[$i - 1]['name'] == 'navbar' && $components[$i - 1]['props']['Hang'])
                     <div class="position-relative">
-                        @include('project.cms.navbar', ["component"=>$components[$i-1]])
-                        @include('project.cms.carousel', ["component"=>$component])
+                        @include('navbar', ["component"=>$components[$i-1]])
+                        @include('carousel', ["component"=>$component])
                     </div>
                 @else
-                    @include('project.cms.carousel', ["component"=>$component])
+                    @include('carousel', ["component"=>$component])
                 @endif
             @break
             @case('enquiry')
-                @include('project.cms.enquiry', ["component"=>$component])
+                @include('enquiry', ["component"=>$component])
             @break
             @default
                 <div class="container text-center">

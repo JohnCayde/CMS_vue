@@ -1,7 +1,7 @@
-@extends('project.cms.layout')
+@extends('layout')
 
 @section('script')
-    <script src={{ asset('js/project/5849b/howto.js') }} defer></script>
+    <script src={{ asset('js/howto.js') }} defer></script>
 @endsection
 
 @section('main')
@@ -21,8 +21,9 @@
                         <p>Go to the page of Config</p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_1.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="1" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_1.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="1" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
                 <li class="list-group-item d-flex">
@@ -31,8 +32,9 @@
                         <p>Add a page at the left menu (pointed in the picture beside) and give it a name</p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_2.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="2" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_2.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="2" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
                 <li class="list-group-item d-flex">
@@ -41,48 +43,57 @@
                         <p>A container correspond to the page will be appear at the right menu</p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_3.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="3" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_3.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="3" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
                 <li class="list-group-item d-flex">
                     <div class="w-50">
                         <h5>Step 4</h5>
-                        <p>In order to add component to your page, head to the page container and click the blue button below there</p>
+                        <p>In order to add component to your page, head to the page container and click the blue button
+                            below there</p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_4.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="4" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_4.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="4" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
                 <li class="list-group-item d-flex">
                     <div class="w-50">
                         <h5>Step 5</h5>
-                        <p>Decide and select the component the list, then click ok. The new component will appear in the stack list of container</p>
+                        <p>Decide and select the component the list, then click ok. The new component will appear in the
+                            stack list of container</p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_5.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="5" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_5.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="5" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
                 <li class="list-group-item d-flex">
                     <div class="w-50">
                         <h5>Step 6</h5>
-                        <p>Take note that the order of component in the stack list is represent the order of component at your page</p>
+                        <p>Take note that the order of component in the stack list is represent the order of component at
+                            your page</p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_6.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="6" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_6.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="6" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
                 <li class="list-group-item d-flex">
                     <div class="w-50">
                         <h5>Step 7</h5>
-                        <p>Remove the component by clicking the "X" icon. Config the component by clicking the 3 dot icon</p>
+                        <p>Remove the component by clicking the "X" icon. Config the component by clicking the 3 dot icon
+                        </p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_7.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="7" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_7.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="7" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
                 <li class="list-group-item d-flex">
@@ -91,18 +102,21 @@
                         <p>After complete your component configuration, click "Save Change" button</p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_8.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="8" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_8.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="8" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
                 <li class="list-group-item d-flex">
                     <div class="w-50">
                         <h5>Step 9</h5>
-                        <p>Once you complete all the configuration, click the "Preview" at the top of the page to preview the page you configured</p>
+                        <p>Once you complete all the configuration, click the "Preview" at the top of the page to preview
+                            the page you configured</p>
                     </div>
                     <div class="w-50">
-                        <img class="w-100" src="../../img/5879b/step_9.png" alt="step1">
-                        <button type="button" class="btn btn-warning w-100" value="9" data-bs-toggle="modal" data-bs-target="#imgEnlarge">Click to Enlarge</button>
+                        <img class="w-100" src="/img/step_9.png" alt="step1">
+                        <button type="button" class="btn btn-warning w-100" value="9" data-bs-toggle="modal"
+                            data-bs-target="#imgEnlarge">Click to Enlarge</button>
                     </div>
                 </li>
             </ul>
@@ -121,20 +135,20 @@
         </div>
         <div class="modal fade" id="imgEnlarge" tabindex="-1" aria-labelledby="imgEnlargeLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="imgEnlargeLabel">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imgEnlargeLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="enlargeImg" src="" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
-                <div class="modal-body text-center">
-                  <img id="enlargeImg" src="" alt="">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
     </div>
 @endsection

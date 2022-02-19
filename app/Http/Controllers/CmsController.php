@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-use App\Models\cms\Page;
-use App\Models\cms\Comp;
-use App\Models\cms\Prop;
-use App\Models\cms\CompUser;
-use App\Models\cms\PropUser;
+use App\Models\Page;
+use App\Models\Comp;
+use App\Models\Prop;
+use App\Models\CompUser;
+use App\Models\PropUser;
 
 class CmsController extends Controller
 {
@@ -20,7 +20,7 @@ class CmsController extends Controller
         if (Auth::check()) {
             return view("home");
         } else {
-            return view('auth.login', ["from" => "c4ca4238a0b923820dcc509a6f75849b"]);
+            return view('auth.login', ["from" => ""]);
         }
     }
 
@@ -37,6 +37,9 @@ class CmsController extends Controller
     public function preview($page = null)
     {
         $pages = $this->GetPage();
+        if (count($pages) == 0) {
+            return view("preview", ["components" => []]);
+        }
         $pageCodes = array_column($pages, "code");
         $pageIndex = $page ? array_search($page, $pageCodes) : 0;
 

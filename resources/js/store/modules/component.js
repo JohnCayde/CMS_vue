@@ -1,34 +1,43 @@
-import axios from 'axios'
+import axios from "axios";
 
 const state = {
-    components: []
-}
+    components: [],
+};
 
 const getters = {
-    AllComps: state => state.components,
-    NavBarProps: state => state.components.find(comp=>comp.name == "navbar").props,
-    CardListProps: state => state.components.find(comp=>comp.name == "cards").props,
-    CarouselProps: state => state.components.find(comp=>comp.name == "carousel").props,
-    EnquiryProps: state => state.components.find(comp=>comp.name == "enquiry").props,
-}
+    AllComps: (state) => state.components,
+    NavBarProps: (state) =>
+        state.components.find((comp) => comp.name == "navbar").props,
+    CardListProps: (state) =>
+        state.components.find((comp) => comp.name == "cards").props,
+    CarouselProps: (state) =>
+        state.components.find((comp) => comp.name == "carousel").props,
+    EnquiryProps: (state) =>
+        state.components.find((comp) => comp.name == "enquiry").props,
+};
 
 const actions = {
-    async getComps({commit}){
-        const components = await axios.get("/projects/c4ca4238a0b923820dcc509a6f75849b/config/getComponent")
-        .then(({data})=>{return data})
-        .catch((err)=>{console.log("Eror. Refresh one more time or email the admin")})
+    async getComps({ commit }) {
+        const components = await axios
+            .get("/config/getComponent")
+            .then(({ data }) => {
+                return data;
+            })
+            .catch((err) => {
+                console.log("Eror. Refresh one more time or email the admin");
+            });
 
-        commit("setAllComps", components)
+        commit("setAllComps", components);
     },
-}
+};
 
 const mutations = {
     setAllComps: (state, comps) => (state.components = comps),
-}
+};
 
 export default {
     state,
     getters,
     actions,
-    mutations
-}
+    mutations,
+};

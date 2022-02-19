@@ -1,7 +1,7 @@
-@extends('project.cms.layout')
+@extends('layout')
 
 @section('script')
-    <script src={{ asset('js/project/5849b/main.js') }} defer></script>
+    <script src={{ asset('js/main.js') }} defer></script>
 @endsection
 
 @section('main')

@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 use App\Http\Controllers\CmsController;
 
 Route::get('/', [CmsController::class, 'cms']);
@@ -26,3 +27,6 @@ Route::post('/config/delComponent', [CmsController::class, 'DelComponent'])->mid
 Route::post('/config/upComponent', [CmsController::class, 'UpComponent'])->middleware('auth');
 Route::get('/preview/{page?}', [CmsController::class, 'preview'])->middleware('auth');
 Route::post('/message', [CmsController::class, 'sendMessage'])->middleware('auth');
+
+
+require __DIR__ . '/auth.php';

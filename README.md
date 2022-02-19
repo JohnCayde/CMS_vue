@@ -7,6 +7,10 @@ By consider each webpage as container,
 User able to insert any component such as navbar, cards, and etc into the container (Web page)
 User also able to config each of the component with limites styling.
 
+![Setup](https://github.com/JohnCayde/CMS_vue/blob/main/public/img/screenshot1.jpg).
+
+![Preview](https://github.com/JohnCayde/CMS_vue/blob/main/public/img/screenshot2.jpg).
+
 ## Tech Stack
 
 -   Vue
